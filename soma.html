@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Somante de Números</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            button{
+                margin-top: 50px ;
+                padding: 10px ;
+            }
+            h1{
+                font-size: 40px ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Programa de Somar</h1>
+        <input id="n1" type="number">
+        <h1>+</h1>
+        <input id="n2" type="number">
+        <br>
+        <button id="botao">Somar</button>
+        <p id="resultado"></p>
+
+        <script>
+            let botao=document.getElementById("botao")
+            botao.addEventListener("click", function(){
+                //Opções para testar o programa
+                //console.log("clicaram");
+                //alert("clicaram")
+
+                //jeito real de fazer:
+                let n1=parseInt(document.getElementById("n1").value) 
+                let=n2=parseInt(document.getElementById("n2").value)
+                let soma=n1+n2
+                document.getElementById("resultado").innerText="A soma é: " + soma
+            })
+        </script>
+    </body>
+</html>
